@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>myEEflaschards</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<header class="logoBar">
+		<div style="height: 40%;"></div>
+		<div id="logoBox">
+			<h2><span id="blue">my</span>EE<span id="white">flashcards</span></h2>
+		</div>
+	</header>
+		<div id="mainBody">
+			  <div id="randomWord" align="center">
+				<h3 id="wordQuestion"></h3>
+			  </div>
+					<div id="button1" onclick="answerValidation1(this);">
+						<h3 id="choice1"></h3>
+					</div>
+					<div id="button2" onclick="answerValidation2(this);">
+						<h3 id="choice2"></h3>
+					</div>
+					<div id="button3" onclick="answerValidation3(this);">
+						<h3 id="choice3"></h3>
+					</div>
+				<div id="ifWrong">
+				<p id="correctAnswer"></p>
+				</div>
+			<div id="loadAgain" onclick="mainFunction();">
+			<h3 id="newWord">Nueva palabra</h3>
+			</div>
+		</div>
+	<footer class="resultBar">
+		<div id="stat1"><p id="correct"></p></div>
+		<div id="stat2"><p id="incorrect"></p></div>
+		<div id="stat3"><p id="ratio"></p></div>
+	</footer>
+	<script src="./script/javascript.js"></script>
+</body>
+</html>
