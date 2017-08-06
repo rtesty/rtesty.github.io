@@ -1,8 +1,9 @@
 //* Object and variables
-var building, i, x, y, z, w, s1, s2, s3, ns1, ns2, ns3;
+var building, i, x, y, z, w, s1, s2, s3, ns1, ns2, ns3, soundState;
 s1 = 0;
 s2 = 0;
 s3 = s1+s2;
+
 
 document.getElementById("correct").innerHTML = s1;
 document.getElementById("incorrect").innerHTML = s2;
@@ -12,7 +13,7 @@ document.getElementById("ratio").innerHTML = s3;
 var mainFunction = function(){
 
 var building = {
-	english:  ["door","window","room","floor","roof","wall","elevator","house","apartment","hallway","stairs"],
+	english:  ["door","window","room","floor","ceiling","wall","elevator","house","apartment","hallway","stairs"],
 	estonian: ["uks","aken","tuba","põrand","lagi","sein","lift","maja","korter","koridor","trepp"]
 };
 
@@ -35,9 +36,9 @@ w = building.estonian[randm3];
 
 //*div colors and result bar to default
 
-button1.style.background = "#00FF40";
-button2.style.background = "#00FF40";
-button3.style.background = "#00FF40";
+button1.style.background = "#7EA16B";
+button2.style.background = "#7EA16B";
+button3.style.background = "#7EA16B";
 document.getElementById("correctAnswer").innerHTML = "";
 
 
@@ -79,13 +80,13 @@ switch (Math.round(Math.random()*5)) {
 function answerValidation1(divObj) {
 	if(document.getElementById("correctAnswer").innerHTML == ""){
 	if (document.getElementById("choice1").innerHTML == y) {
-		button1.style.background = "#5882FA";
+		button1.style.background = "#386C0B";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns1= parseInt(s1);
 		s1= ns1+1;
 		updateResults();
 	} else {
-		button1.style.background = "#F5A9A9";
+		button1.style.background = "#70161E";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns2= parseInt(s2);
 		s2= ns2+1;
@@ -97,13 +98,13 @@ function answerValidation1(divObj) {
 function answerValidation2(divObj) {
 	if(document.getElementById("correctAnswer").innerHTML == ""){
 	if (document.getElementById("choice2").innerHTML == y) {
-		button2.style.background = "#5882FA";
+		button2.style.background = "#386C0B";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns1= parseInt(s1);
 		s1= ns1+1;
 		updateResults();
 	} else {
-		button2.style.background = "#F5A9A9";
+		button2.style.background = "#70161E";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns2= parseInt(s2);
 		s2= ns2+1;
@@ -115,13 +116,13 @@ function answerValidation2(divObj) {
 function answerValidation3(divObj) {
 	if(document.getElementById("correctAnswer").innerHTML == ""){
 	if (document.getElementById("choice3").innerHTML == y) {
-		button3.style.background = "#5882FA";
+		button3.style.background = "#386C0B";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns1= parseInt(s1);
 		s1= ns1+1;
 		updateResults();
 	} else {
-		button3.style.background = "#F5A9A9";
+		button3.style.background = "#70161E";
 		document.getElementById("correctAnswer").innerHTML = y;
 		ns2= parseInt(s2);
 		s2= ns2+1;
