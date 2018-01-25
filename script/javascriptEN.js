@@ -4,6 +4,9 @@ s1 = 0;
 s2 = 0;
 s3 = s1+s2;
 
+var theme =0;
+var wordBaseChoice;
+
 
 document.getElementById("correct").innerHTML = s1;
 document.getElementById("incorrect").innerHTML = s2;
@@ -12,10 +15,7 @@ document.getElementById("ratio").innerHTML = s3;
 
 var mainFunction = function(){
 
-var building = {
-	english:  ["door","window","room","floor","ceiling","wall","elevator","house","apartment","hallway","stairs"],
-	estonian: ["uks","aken","tuba","põrand","lagi","sein","lift","maja","korter","koridor","trepp"]
-};
+wordBase();
 
 var randm1 = Math.round(Math.random()*10);
 var randm2 = Math.round(Math.random()*10);
@@ -29,10 +29,10 @@ while (randm1 == randm2 || randm1 == randm3 || randm2 == randm3) {
   var randm3 =  Math.floor(Math.random()*10);
 };
 
-x = building.english[randm1];
-y = building.estonian[randm1];
-z = building.estonian[randm2];
-w = building.estonian[randm3];
+x = wordBaseChoice.english[randm1];
+y = wordBaseChoice.estonian[randm1];
+z = wordBaseChoice.estonian[randm2];
+w = wordBaseChoice.estonian[randm3];
 
 //*div colors and result bar to default
 

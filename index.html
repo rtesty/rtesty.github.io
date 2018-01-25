@@ -15,6 +15,15 @@
 			<div id="soundButton" onclick="soundOnOff();">
 				<p id="status"></p>
 			</div>
+			<div id="dropDown">
+				<p id="dropButton">Topics</p>
+				<div id="topics">
+					<p id="tpc0" style="background-color: #596F62;" onClick="colorDefault(); topicColor(this); themeChoice();">Building</p>
+					<p id="tpc1" style="background-color: #596F62;" onClick="colorDefault(); topicColor(this); themeChoice();">People</p>
+					<p id="tpc2" style="background-color: #596F62;" onClick="colorDefault(); topicColor(this); themeChoice();">Transport</p>
+					<p id="tpc3" style="background-color: #596F62;" onClick="colorDefault(); topicColor(this); themeChoice();">Pronouns</p>
+				</div>
+			</div>
 	</header>
 		<div id="mainBody">
 			  <div id="randomWord" align="center">
@@ -41,7 +50,9 @@
 		<div id="stat2"><p id="incorrect"></p></div>
 		<div id="stat3"><p id="ratio"></p></div>
 	</footer>
+	<script src="./script/wordBase.js"></script>
 	<script src="./script/javascriptEN.js"></script>
 	<script src="./script/ttsjavascript.js"></script>
+	<script src="./script/Topicmenu.js"></script>
 </body>
 </html>

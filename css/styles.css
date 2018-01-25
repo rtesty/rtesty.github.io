@@ -23,6 +23,7 @@ p {
 	font-size: 100%;
 	font-weight: bold;
 	color: #FFFFFF;
+	font-family: Corbel;
 }
 
 .mainMeny {
@@ -49,6 +50,8 @@ header {
 		float: left;
 		overflow: hidden;
 }
+
+/* Applies to sound button*/
 #soundButton {
 	width: 7%;
 	height: 25px;
@@ -61,6 +64,47 @@ header {
 #soundButton:hover p {
   color:#E4EAF0;
  }
+ 
+ /* Applies to topics dropdown*/
+ #dropButton {
+  width: 7%;
+  border: none;
+}
+
+#dropButton:hover {
+  color:#E4EAF0;
+}
+
+#dropDown {
+ 
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-right: 1%;
+  padding-top: 8;
+  Padding-bottom: 0;
+}
+
+#topics {
+  display: none;
+  position: absolute;
+  min-width: 10%;
+  /*background-color: #596F62;*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+#topics p {
+  text-decoration: none;
+  display: block;
+  padding-left: 5%
+}
+
+#dropDown:hover #topics {
+  display: block;
+}
+ 
 footer {
 		background-color: #1C3144;
 		position:absolute; 
@@ -197,10 +241,7 @@ a:link    {
 }
 	
 @media only screen and (max-width: 800px) {
-    body {
-        background-color: yellow;
-    }
-	h1 {
+    h1 {
 		font-size: 300%;
 	}
 	#mainBody {
@@ -234,10 +275,29 @@ a:link    {
 		width: 100%;
 	}
 	#logoBox {
-		width: 60%;
+		width: 45%;
 	}
 	#soundButton {
-		width: 30%;
+		width: 20%;
+		text-align: left;
+	}
+	
+	#dropButton {
+		width: 8%;
+		text-align: right;
+		margin-left: 55%
+	}
+	
+	#dropDown {
+		min-width: 30%;
+	}
+	
+	#topics {
+		width: 50%;
+	}
+	
+	#topics p {
+		font-size: 200%;
 	}
 	#englishSite, #theory, #write {
 		height: 4%;
