@@ -1,4 +1,4 @@
-//* Words and Switch to activate the variable in mainFunction() 
+//* Words and Switch to activate the variable in mainFunction()
 
 var theme0 = {
 	english:  ["door","window","room","floor","ceiling","wall","elevator","house","apartment","hallway","stairs"],
@@ -20,6 +20,11 @@ var theme3 = {
 	estonian: ["mina","sina","tema","meie","teie","nemad","minu","sinu","minule","sinule","nende"]
 };
 
+var theme4 = {
+	english: ["Hello","Good day","Good morning","Good evening","Goodbye","Good night","Nice to meet you","How are you","I am doing well","Excuse me","What's up"],
+	estonian: ["Tere","Tere päevast","Tere hommikust","Tere õhtust","Head aega","Head ööd","Meeldiv tutvuda","Kuidas läheb","Mul läheb hästi","Vabandust","Mis toimub"]
+};
+
 function wordBase(){
 	switch(theme){
 		case 0: wordBaseChoice = theme0;
@@ -29,6 +34,8 @@ function wordBase(){
 		case 2: wordBaseChoice = theme2;
 		break;
 		case 3: wordBaseChoice = theme3;
+		break;
+		case 4: wordBaseChoice = theme4;
 		break;
 	};
 	wordBaseChoice;
